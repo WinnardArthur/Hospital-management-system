@@ -23,7 +23,6 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-          {/* <Header /> */}
           <Route path="/" exact>
             <Login />
           </Route>
