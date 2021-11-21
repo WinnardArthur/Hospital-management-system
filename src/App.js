@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect  } from 'react-router-dom';
+import Admin from './pages/admin/Admin';
+import Doctor from './pages/doctors/Doctor';
+import Login from './pages/login/Login';
+import Staff from './pages/staff/Staff';
+import Cookies from 'universal-cookie/es6';
+import Header from './components/Header/Header';
+
+
+const cookies = new Cookies();
+
+const username = cookies.get('username') 
+const password = cookies.get('password') 
+const position = cookies.get('position') 
+
+console.log(username, password, position)
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  if(username === undefined || password === undefined || position === undefined) return <Login />
+
+  return (    
+    <div className="app">
+      <Router>
+        <Switch>
+          {/* <Header /> */}
+          <Route path="/" exact>
+            <Login />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/admin">
+            {position === 'admin' ? <Admin /> : <Redirect to={`/${position}`} />}
+          </Route>
+          <Route path="/staff">
+            {position === 'staff' ? <Staff /> : <Redirect to={`/${position}`} />}  
+          </ Route >
+          <Route path="/doctor">
+            {position === 'doctor' ? < Doctor /> : <Redirect to={`/${position}`} /> }
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
