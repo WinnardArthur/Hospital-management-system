@@ -4,7 +4,6 @@ import Doctor from './pages/doctors/Doctor';
 import Login from './pages/login/Login';
 import Staff from './pages/staff/Staff';
 import Cookies from 'universal-cookie/es6';
-import Header from './components/Header/Header';
 
 
 const cookies = new Cookies();
