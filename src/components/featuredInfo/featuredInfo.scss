@@ -49,3 +49,8 @@
     color: gray;
 }
 
+@media (max-width: 680px) {
+    .featured {
+        flex-direction: column;
+    }
+}

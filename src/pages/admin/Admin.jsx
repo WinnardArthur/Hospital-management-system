@@ -5,6 +5,8 @@ import { useState } from "react";
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import Chart from "../../components/chart/Chart";
 import { userData } from "../../dummyData";
+import DoctorList from "../../components/doctorList/DoctorList";
+import StaffList from "../../components/staffList/StaffList";
 
 const cookies = new Cookies();
 
@@ -107,6 +109,14 @@ const Admin = () => {
                             num3={150}
                         />
                         <Chart data={userData} title="Statistics" dataKey={'Patients'} grid/>
+                    </div>
+
+                    <div className="doctorsArea">
+                        <DoctorList />
+                    </div>
+                    
+                    <div className="staffArea">
+                        <StaffList />
                     </div>
                 </div>
                 

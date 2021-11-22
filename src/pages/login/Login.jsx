@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./login.scss";
 import Cookies from "universal-cookie/es6";
+import Header from "../../components/Header/Header";
 
 const cookies = new Cookies();
 
@@ -36,7 +37,9 @@ const Login = () => {
     }
     return (
         <div className="login" onSubmit={handleSubmit}>
-            <form>
+            <Header />
+            <div className="loginContent">
+                <form>
                 <h1>Sign in</h1>
                 <div className="form-item">
                     <label htmlFor="Username">Username</label>
@@ -74,7 +77,8 @@ const Login = () => {
                     </select>
                 </div>
                 <button>login</button>
-            </form>
+                </form>
+            </div>
         </div>
     )
 }

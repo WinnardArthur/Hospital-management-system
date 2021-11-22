@@ -11,11 +11,18 @@ const Header = () => {
 
         window.location.replace('/login');
     }
+
+    const signIn = () => {
+        window.location.replace('/login')
+    }
+
+    const path = window.location.pathname
+
     return (
         <div className="header">
             <h1>Hospital Management System</h1>
             <div>
-                <h5 onClick={logout}>Logout</h5>
+                {path === '/login' ? <h5 onClick={signIn}>Sign in</h5> : <h5 onClick={logout}>Logout</h5>}
             </div>
         </div>
     )

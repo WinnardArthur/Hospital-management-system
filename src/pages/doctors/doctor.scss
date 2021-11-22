@@ -6,5 +6,11 @@
 .doctorBody {
     padding-left: 10%;
     margin-top: 2rem;
+
+    .patientList {
+        display: flex;
+        width: 96.6%;
+        margin-left: 1.3rem;
+    }
 }
 

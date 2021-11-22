@@ -1,4 +1,4 @@
-import './widgetLg.css'
+import './widgetLg.scss'
 
 export default function WidgetLg() {
 
@@ -19,7 +19,7 @@ export default function WidgetLg() {
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
                         <img 
-                            src="/images/austin.jpg" 
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
                             alt="" 
                             className="widgetLgImg" 
                         />
@@ -35,11 +35,11 @@ export default function WidgetLg() {
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
                         <img 
-                            src="/images/austin.jpg" 
+                            src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
                             alt="" 
                             className="widgetLgImg" 
                         />
-                        <span className="widgetLgName">Susan Carol</span>
+                        <span className="widgetLgName">Mavis Beacon</span>
                     </td>
                     <td className="widgetLgDate">2 Jun 2021</td>
                     <td className="widgetLgAmount">$122.00</td>
@@ -51,11 +51,11 @@ export default function WidgetLg() {
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
                         <img 
-                            src="/images/austin.jpg" 
+                            src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
                             alt="" 
                             className="widgetLgImg" 
                         />
-                        <span className="widgetLgName">Susan Carol</span>
+                        <span className="widgetLgName">Jack Sparrow</span>
                     </td>
                     <td className="widgetLgDate">2 Jun 2021</td>
                     <td className="widgetLgAmount">$122.00</td>
@@ -67,11 +67,11 @@ export default function WidgetLg() {
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
                         <img 
-                            src="/images/austin.jpg" 
+                            src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
                             alt="" 
                             className="widgetLgImg" 
                         />
-                        <span className="widgetLgName">Susan Carol</span>
+                        <span className="widgetLgName">Clara Tucker </span>
                     </td>
                     <td className="widgetLgDate">2 Jun 2021</td>
                     <td className="widgetLgAmount">$122.00</td>

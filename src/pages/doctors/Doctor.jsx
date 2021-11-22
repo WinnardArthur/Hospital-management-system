@@ -3,7 +3,9 @@ import Cookies from "universal-cookie/es6";
 import Chart from "../../components/chart/Chart";
 import { userData } from "../../dummyData";
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo"
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header/Header';
+import WidgetLg from '../../components/widgetLg/WidgetLg';
+import WidgetSm from '../../components/widgetSm/WidgetSm';
 
 const cookies = new Cookies();
 
@@ -24,6 +26,11 @@ const Doctor = () => {
                 </div>
                 <div className="chartArea">
                     <Chart data={userData} title="Patient analytics" dataKey="Patients" grid/>
+                </div>
+
+                <div className="patientList">
+                    <WidgetSm />
+                    <WidgetLg />
                 </div>
             </div>
         </div>
